@@ -1,4 +1,4 @@
-// console.log('hey Im ready')
+
 
 const cacheName = "my-site-chache-v1";
 const cacheDataName = "data-cache-v1";
@@ -24,7 +24,7 @@ self.addEventListener("install", function(event){
 
 self.addEventListener("fetch", function(event){
     
-    if (event.requrest.url.includes("/api/")) {
+    if (event.request.url.includes("/api/")) {
         event.respondWith(
             caches.open(cacheDataName).then(cache => {
                 return(response => {

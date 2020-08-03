@@ -55,4 +55,4 @@ function checkDb() {
 
 
 
-window.addEventListener("online", checkDatabase);
+window.addEventListener("online", checkDb);
